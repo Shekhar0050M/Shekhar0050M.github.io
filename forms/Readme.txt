@@ -1,2 +1,4 @@
-Fully working PHP/AJAX contact form script is available in the pro version of the template.
-You can buy it from: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
+/*This file is created from github repositories*/
+//Createdby::Shekhar Suman
+//we::eventmanagememt
+//project::created eventmanagementapp
