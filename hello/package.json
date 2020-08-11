@@ -1,4 +1,4 @@
-{
+"homepage": "http://Shekhar0050M.github.io/hello"
   "name": "hello",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+  "deploy": "hello -d build"
+
   },
   "eslintConfig": {
     "extends": "react-app"
