@@ -1,492 +1,1080 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167856909-4"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		gtag('config', 'UA-167856909-4');
-	</script>
-	<style>
-		#resume_download_button {
-			position: absolute;
-			color: black;
-			right: 20px;
-			bottom: 20px;
-			background-color: white;
-			border-radius: 50%;
-			height: 60px;
-			width: 60px;
-			border: 4px solid rgb(220, 220, 220);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
+  <!-- Primary SEO Meta Tags -->
+  <title>Shekhar Suman | SAP ABAP & Full-Stack Developer | IBM</title>
+  <meta name="title" content="Shekhar Suman | SAP ABAP & Full-Stack Developer | IBM" />
+  <meta name="description"
+    content="Official portfolio of Shekhar Suman, SAP ABAP & Full-Stack Developer at IBM. 3x SAP Certified (ABAP Cloud, SAP Fiori, Generative AI). Specializing in ABAP RAP, CDS Views, SAPUI5, and S/4HANA architectures with 579+ LeetCode problems solved." />
+  <meta name="keywords"
+    content="Shekhar Suman, SAP ABAP, ABAP Cloud, SAP RAP, SAP Fiori, SAPUI5, IBM, S/4HANA, OData, CDS Views, RICEFW, LeetCode, IEM Kolkata, Software Engineer, Portfolio" />
+  <meta name="author" content="Shekhar Suman" />
+  <link rel="canonical" href="https://shekhar0050m.github.io/" />
 
-		.project_img:hover {
-			transform: scale(1.15);
-		}
-	</style>
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shekhar0050m.github.io/" />
+  <meta property="og:title" content="Shekhar Suman | SAP ABAP & Full-Stack Developer | IBM" />
+  <meta property="og:description"
+    content="SAP ABAP & Full-Stack Developer at IBM. 3x SAP Certified, S/4HANA ABAP RAP, Fiori Elements, and 579+ LeetCode problems solved." />
+  <meta property="og:image" content="https://shekhar0050m.github.io/assets/img/shekhar-avatar.png" />
 
-	<title>Shekhar Suman</title>
-	<meta charset="utf-8" />
-	<link rel="icon" href="assets/img/target.png" type="image/x-icon" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="Techno lunatic during the day , cyber punk over the night." />
-	<meta name="keywords" content="shekhar, suman , shekhar0050m" />
-	<meta name="author" content="Shekhar Suman" />
-	<meta property="og:type" content="website" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:url" content="http://shekhar0050m.github.io" />
-	<meta name=" twitter:title" content="Shekhar Suman" />
-	<meta name="twitter:description" content="Techno lunatic during the day , cyber punk over the night." />
-	<meta name="twitter:image" content="assets/img/target.png" />
-	<meta property="og:title" content="Shekhar Suman" />
-	<meta property="og:url" content="http://shekhar0050m.github.io" />
-	<meta property="og:description" content="Techno lunatic during the day , cyber punk over the night." />
-	<meta property="og:image" itemprop="image" content="assets/img/target.png" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://shekhar0050m.github.io/" />
+  <meta name="twitter:title" content="Shekhar Suman | SAP ABAP & Full-Stack Developer | IBM" />
+  <meta name="twitter:description"
+    content="SAP ABAP & Full-Stack Developer at IBM. 3x SAP Certified, S/4HANA ABAP RAP, Fiori Elements, and 579+ LeetCode problems solved." />
+  <meta name="twitter:image" content="https://shekhar0050m.github.io/assets/img/shekhar-avatar.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/shekhar-avatar.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
+
+  <!-- Google Analytics Tracking (Preserved) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167856909-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-167856909-4');
+  </script>
 </head>
 
 <body>
-	<!-- notification for small viewports and landscape oriented smartphones -->
-	<div class="device-notification">
-		<a class="device-notification--logo" href="#0">
-			<img height="50px" width="50px" src="assets/img/target.png" alt="Global" />
-			<p>Shekhar Suman</p>
-		</a>
-		<p class="device-notification--message">
-			Techno Lunatic during the day , cyber punk over the night
-		</p>
-	</div>
 
-	<div class="perspective effect-rotate-left">
-		<div class="container">
-			<div class="outer-nav--return"></div>
-			<div id="viewport" class="l-viewport">
-				<div class="l-wrapper">
-					<header class="header">
-						<a class="header--logo" href="#0">
-							<img height="50px" width="50px" src="assets/img/target.png" alt="Global" />
-							<p>Shekhar Suman</p>
-						</a>
-						<button class="header--cta cta">Hire Me</button>
-						<div class="header--nav-toggle">
-							<span></span>
-						</div>
-					</header>
-					<nav class="l-side-nav">
-						<ul class="side-nav">
-							<li class="is-active"><span>Home</span></li>
-							<li><span>Projects</span></li>
-							<li><span>About</span></li>
-							<li><span>Contact</span></li>
-							<li><span>Hire Me</span></li>
-						</ul>
-					</nav>
-					<ul class="l-main-content main-content">
-						<li class="l-section section section--is-active">
-							<div class="intro">
-								<div class="intro--banner">
-									<h1>Learning<br />till<br />oblivion.</h1>
-									<button class="cta">
-										Hire Me
-										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 150 118" style="enable-background: new 0 0 150 118"
-											xml:space="preserve">
-											<g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-												<path
-													d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-											</g>
-										</svg>
-										<span class="btn-background"></span>
-									</button>
-								</div>
-								<div class="intro--options">
-									<a href="#0">
-										<h3>Shekhar Suman</h3>
-										<p>
-											Techno Lunatic during the day , cyber punk over the
-											night.
-										</p>
-									</a>
-								</div>
-							</div>
-						</li>
-						<li class="l-section section">
-							<div class="work">
-								<h2>My Projects</h2>
-								<div class="work--lockup">
-									<ul class="slider">
-										<li class="slider--item slider--item-left">
-											<a href="https://github.com/Shekhar0050M/Cectus" target="_blank">
-												<div class="slider--item-image">
-													<img src="assets/img/open-book.png" alt="Victory" />
-												</div>
-												<p class="slider--item-title">Cectus</p>
-												<p class="slider--item-description">
-													Curated list of topics related to data structure and algorithms
-												</p>
-											</a>
-										</li>
-										<li class="slider--item slider--item-center">
-											<a href="https://github.com/Shekhar0050M/LYP-LastYearProject"
-												target="_blank">
-												<div class="slider--item-image">
-													<img src="assets/img/iceberg.png" alt="Alex Nowak" />
-												</div>
-												<p class="slider--item-title">LYP-LastYearProject</p>
-												<p class="slider--item-description">
-													Image Sensing using GAN
-												</p>
-											</a>
-										</li>
-										<li class="slider--item slider--item-right">
-											<a target="_blank" href="https://github.com/Shekhar0050M/Notes-cpp">
-												<div class="slider--item-image">
-													<img src="assets/img/work-metiew-smith.jpg" />
-												</div>
-												<p class="slider--item-title">
-													Notes-cpp
-												</p>
-												<p class="slider--item-description">
-													Notes app using c++ and postgresql
-												</p>
-											</a>
-										</li>
-									</ul>
-									<div class="slider--prev">
-										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 150 118" style="enable-background: new 0 0 150 118"
-											xml:space="preserve">
-											<g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-												<path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
-											</g>
-										</svg>
-									</div>
-									<div class="slider--next">
-										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 150 118" style="enable-background: new 0 0 150 118"
-											xml:space="preserve">
-											<g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-												<path
-													d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-											</g>
-										</svg>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="l-section section">
-							<div class="about">
-								<div class="about--banner">
-									<h2>
-										I am<br />more than<br />just a<br />technophile.
-									</h2>
-									<a target="_blank" href="https://www.linkedin.com/in/shekhar0050m/">More
-										<span>
-											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-												xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-												viewBox="0 0 150 118" style="enable-background: new 0 0 150 118"
-												xml:space="preserve">
-												<g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-													<path
-														d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
-												</g>
-											</svg>
-										</span>
-									</a>
-									<img src="assets/img/about-visual.png" alt="About Us" />
-								</div>
-								<div class="about--options">
-									<a href="https://play.picoctf.org/users/shekhar0050m">
-										<h3>Cybersecurity Enthusiast</h3>
-									</a>
-									<a href="https://leetcode.com/Shekhar0050M/">
-										<h3>Competitive Coder</h3>
-									</a>
-									<a href="https://github.com/Shekhar0050M/">
-										<h3>Open Source Contributor</h3>
-									</a>
-								</div>
-							</div>
-						</li>
-						<li class="l-section section">
-							<div class="contact">
-								<div class="contact--lockup">
-									<div class="modal">
-										<div class="modal--information">
-											<p>Bihar, India</p>
-											<a href="mailto:ouremail@gmail.com">shekhar0050m@gmail.com</a>
-											<a href="tel:+918873242785">+91 8873242785</a>
-										</div>
-										<ul class="modal--options">
-											<li>
-												<a target="_blank" href="https://twitter.com/shekhar0050m"><img
-														src="./assets/img/twitter.png" alt="Twitter logo"
-														style="height: 10px" />
-													Twitter</a>
-											</li>
-											<li>
-												<a target="_blank" href="https://github.com/shekhar0050m"><img
-														src="./assets/img/github.png" alt="Github logo"
-														style="height: 10px" />
-													<span>Github</span></a>
-											</li>
-											<li>
-												<a target="_blank" href="https://www.linkedin.com/in/shekhar0050m/">
-													<span><img src="./assets/img/linkedin.png" alt="Linkedin Logo"
-															style="height: 10px" /></span>
+  <!-- Ambient Glowing Background Blobs -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-blob ambient-blob-1"></div>
+    <div class="ambient-blob ambient-blob-2"></div>
+    <div class="ambient-blob ambient-blob-3"></div>
+  </div>
 
-													Linkedin</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="l-section section">
-							<div class="hire">
-								<h2>Explore</h2>
-								<!-- checkout formspree.io for easy form setup -->
-								<form class="work-request">
-									<div class="work-request--options">
-										<span class="options-a">
-											<input id="opt-1" onclick="modal_projects()" type="checkbox"
-												value="app design" />
-											<label for="opt-1">
-												<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 150 111" style="enable-background: new 0 0 150 111"
-													xml:space="preserve">
-													<g
-														transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-														<path
-															d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-													</g>
-												</svg>
-												Projects
-											</label>
-											<input id="opt-2" onclick="modal_research_publication_patents()"
-												type="checkbox" value="graphic design" />
-											<label for="opt-2">
-												<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 150 111" style="enable-background: new 0 0 150 111"
-													xml:space="preserve">
-													<g
-														transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-														<path
-															d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-													</g>
-												</svg>
-												Publication
-											</label>
-											<input id="opt-3" onclick="modal_coding()" type="checkbox"
-												value="motion design" />
-											<label for="opt-3">
-												<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 150 111" style="enable-background: new 0 0 150 111"
-													xml:space="preserve">
-													<g
-														transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-														<path
-															d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-													</g>
-												</svg>
-												Coding
-											</label>
-										</span>
-										<span class="options-b">
-											<input id="opt-4" onclick="modal_academics_and_achievements()"
-												type="checkbox" value="ux design" />
-											<label for="opt-4">
-												<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 150 111" style="enable-background: new 0 0 150 111"
-													xml:space="preserve">
-													<g
-														transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-														<path
-															d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-													</g>
-												</svg>
-												Achievements
-											</label>
-											<input id="opt-5" onclick="modal_work_ex()" type="checkbox"
-												value="webdesign" />
-											<label for="opt-5">
-												<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 150 111" style="enable-background: new 0 0 150 111"
-													xml:space="preserve">
-													<g
-														transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-														<path
-															d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-													</g>
-												</svg>
-												Work-Ex
-											</label>
-											<input id="opt-6" onclick="modal_extra_curricular()" type="checkbox"
-												value="marketing" />
-											<label for="opt-6">
-												<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-													viewBox="0 0 150 111" style="enable-background: new 0 0 150 111"
-													xml:space="preserve">
-													<g
-														transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-														<path
-															d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
-													</g>
-												</svg>
-												Extra Curr
-											</label>
-										</span>
-									</div>
-									<img src="./assets/img/coffee.png" height="100px" alt="Coffe Logo" />
-									<br />
-									<p>Let's have coffee Together</p>
-									<a href="https://calendly.com/shekhar0050m" rel="noopener noreferrer"
-										target="_blank" style="text-decoration: none">
-										<input style="
-													color: white;
-													padding: 10px;
-													padding-left: 30px;
-													padding-right: 30px;
-													font-size: large;
-													border: 2px solid blue;
-													box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-														0 10px 10px rgba(0, 0, 0, 0.22);
-													background-color: blue;
-												" type="Button" value="When?" />
-									</a>
-								</form>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<ul class="outer-nav">
-			<li class="is-active">Home</li>
-			<li>Projects</li>
-			<li>About</li>
-			<li>Contact</li>
-			<li>Hire Me</li>
-		</ul>
-	</div>
-	<a href="./assets/RESUME_SHEKHAR_SUMAN_SE" target="_blank" rel="noopener noreferrer">
-		<div id="resume_download_button">
-			<img src="./assets/img/cv.png" alt="Resume logo" style="height: 40px" />
-		</div>
-	</a>
-	<!-- SWEET ALERT 2 -->
-	<link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet" />
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
-	<script>
-		function modal_projects() {
-			setTimeout(() => {
-				document.getElementById('opt-1').checked = false;
-			}, 350);
-			Swal.fire({
-				title: '<strong>My Projects</strong>',
-				html:
-					`<a href="https://github.com/Shekhar0050M/Notes-cpp" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/google-forms.png" height="50px" style="margin:5px"></a>` +
-					`<a href="https://github.com/Shekhar0050M/LYP-LastYearProject" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/introduction.png" height="50px" style="margin:5px"></a>` +
-					`<a href="https://github.com/Shekhar0050M/Cectus" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/etherum.png" height="50px" style="margin:5px"></a>` +
-					// `<a href="https://myventor.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/open-book.png" height="50px" style="margin:5px"></a>` +
-					showCloseButton: true,
-				focusConfirm: false,
-				confirmButtonText: 'Great!',
-				confirmButtonAriaLabel: 'Thumbs up, great!',
-			});
-			// console.log("MODAL PROJECT");
-		}
-		function modal_coding() {
-			setTimeout(() => {
-				document.getElementById('opt-3').checked = false;
-			}, 350);
-			Swal.fire({
-				title: '<strong>My Coding Footprint</strong>',
-				html:
-					`<a href="https://www.hackerearth.com/shekhar0050m" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/hackerearth.png" height="50px" style="margin:5px"></a>` +
-					`<a href="https://www.hackerrank.com/shekhar0050m" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/hackerrank.png" height="50px" style="margin:5px"></a>` +
-					`<a href="https://www.codechef.com/users/shekhar0050m" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/codechef.jfif" height="50px" style="margin:5px; border-radius:50%;"></a>` +
-					`<a href="https://stackoverflow.com/users/15437674/shekhar-suman" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/stackoverflow.png" height="50px" style="margin:5px; border-radius:50%;"></a>` +
-					`<a href="https://github.com/shekhar0050m" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/githubblue.png" height="50px" style="margin:5px; border-radius:50%;"></a>` +
-					`<a href="https://leetcode.com/shekhar0050m/" target="_blank" rel="noopener noreferrer"><img class="project_img" src="./assets/img/leetcode.png" height="50px" style="margin:5px; border-radius:50%;"></a>`,
-				showCloseButton: true,
-				focusConfirm: false,
-				confirmButtonText: 'Great!',
-				confirmButtonAriaLabel: 'Thumbs up, great!',
-			});
-			// console.log("MODAL CODING");
-		}
-		function modal_academics_and_achievements(params) {
-			setTimeout(() => {
-				document.getElementById('opt-4').checked = false;
-			}, 350);
-			Swal.fire({
-				title: '<strong>Academics & Achievements</strong>',
-				width: 650,
-				html:
-					`<div>` +
-					`<small>All statements can be verified on <a style="color:blue;" href="https://www.linkedin.com/in/shekhar0050m/" target="_blank">Linkedin</a>.</small>` +
-					`<p>🔴 B.Tech IT Graduate from IEM with a 9.23 CGPA</p>` +
-					`<p>🔴 Recognized as a Merit Scholar and Special Achiever.</p>` +
-					`<p>🔴 Top 1.5% scorer in entire nation in 10th Standard.</p>` +
-					`</div>`,
-				showCloseButton: true,
-				focusConfirm: false,
-				confirmButtonText: 'Great!',
-				confirmButtonAriaLabel: 'Thumbs up, great!',
-			});
-			// console.log("MODAL ACADEMICS");
-		}
-		function modal_extra_curricular(params) {
-			setTimeout(() => {
-				document.getElementById('opt-6').checked = false;
-			}, 350);
-			Swal.fire({
-				title: '<strong>Extra Curricular</strong>',
-				width: 650,
-				html:
-					`<div>` +
-					`<p>🔴 Keen interest in Cybersecurity</p>` +
-					`<p>🔴 Inclination Towards OpenSource, Competitive Coding, DSA, and Research.</p>` +
-					`<p>🔴 Learning new things is my dose of dopamine.</p>` +
-					`<p>🔴 Hobbies include Nature, Chess etc.</p>` +
-					`</div>`,
-				showCloseButton: true,
-				focusConfirm: false,
-				confirmButtonText: 'Great!',
-				confirmButtonAriaLabel: 'Thumbs up, great!',
-			});
-			// console.log("MODAL EXTRA CURRICULAR");
-		}
-	</script>
-	<script>
-		window.jQuery ||
-			document.write(
-				'<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>'
-			);
-	</script>
-	<script src="assets/js/functions-min.js"></script>
+  <!-- Real-Time Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Floating Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#overview" class="nav-brand" aria-label="Shekhar Suman Home">
+        <div class="nav-logo-badge">&lt;S/&gt;</div>
+        <div class="nav-brand-title">
+          <span class="nav-brand-name">Shekhar Suman</span>
+          <span class="nav-brand-sub">SAP Full-Stack</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="#overview" class="nav-link active">Overview</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Items -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme" title="Switch Theme">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
+          </svg>
+        </button>
+
+        <button class="btn-primary-sm js-open-resume" id="nav-resume-btn">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+            </path>
+          </svg>
+          Resume
+        </button>
+
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open Mobile Menu">
+          <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand">
+        <div class="nav-logo-badge">&lt;S/&gt;</div>
+        <div class="nav-brand-title">
+          <span class="nav-brand-name">Shekhar Suman</span>
+          <span class="nav-brand-sub">SAP Full-Stack</span>
+        </div>
+      </div>
+      <button id="close-drawer" class="btn-icon" aria-label="Close Mobile Menu">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#overview" class="mobile-nav-link">Overview</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience (IBM)</a></li>
+      <li><a href="#certifications" class="mobile-nav-link">SAP Certifications</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Featured Projects</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Technical Skills</a></li>
+      <li><a href="#education" class="mobile-nav-link">Education & DSA</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 12px;">
+      <button class="btn-primary js-open-resume" style="justify-content: center;">View Interactive Resume</button>
+      <a href="assets/Shekhar_Suman_Resume.pdf" download class="btn-secondary" style="justify-content: center;">Download
+        PDF</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- =====================================================================
+         HERO / OVERVIEW SECTION
+         ===================================================================== -->
+    <section id="overview" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge-pill">
+              <span class="pulse-dot"></span>
+              <span>SAP ABAP Developer at IBM • S/4HANA & Cloud Architecture</span>
+            </div>
+
+            <h1 class="hero-title">
+              Engineering Enterprise Core with <span class="gradient-text">Modern SAP & Cloud</span> Architectures.
+            </h1>
+
+            <p class="hero-subtitle">
+              Enterprise <strong>SAP ABAP & Full-Stack Developer</strong> with real-world engineering experience in
+              <strong>SAP ECC 6.0</strong> (RICEFW, ALV reports, BAPIs, IDocs) and next-generation <strong>SAP
+                S/4HANA Full-Stack</strong> (ABAP RAP, CDS Views, OData v4, Fiori Elements). <strong>3x SAP
+                Certified</strong> with <strong>579+ LeetCode problems solved</strong>.
+            </p>
+
+            <div class="hero-cta-group">
+              <button class="btn-primary js-open-resume" id="hero-view-resume-btn">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                  </path>
+                </svg>
+                View 1-Page Resume
+              </button>
+
+              <a href="assets/Shekhar_Suman_Resume.pdf" download="Shekhar_Suman_Resume.pdf" class="btn-secondary"
+                id="hero-download-resume-btn">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+                Download PDF
+              </a>
+
+              <a href="#certifications" class="btn-secondary">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                  </path>
+                </svg>
+                Verify Credentials
+              </a>
+            </div>
+
+            <div class="hero-social-links">
+              <a href="https://www.linkedin.com/in/shekhar0050m/" target="_blank" rel="noopener noreferrer"
+                class="hero-social-link" title="LinkedIn Profile">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.72a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z">
+                  </path>
+                </svg>
+              </a>
+
+              <a href="https://github.com/Shekhar0050M" target="_blank" rel="noopener noreferrer"
+                class="hero-social-link" title="GitHub Profile (60+ Repos)">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+                  </path>
+                </svg>
+              </a>
+
+              <a href="https://leetcode.com/shekhar0050m/" target="_blank" rel="noopener noreferrer"
+                class="hero-social-link" title="LeetCode Profile (579+ Solved)">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.874 5.874 0 0 0 .349 1.017 5.938 5.938 0 0 0 .481.843 5.49 5.49 0 0 0 4.19 2.493 5.66 5.66 0 0 0 2.387-.41 5.397 5.397 0 0 0 1.126-.658l3.458-2.793a1.353 1.353 0 0 0 .25-1.895 1.38 1.38 0 0 0-1.91-.248L8.77 16.58a3.003 3.003 0 0 1-1.077.538 2.87 2.87 0 0 1-1.258.077 2.744 2.744 0 0 1-1.76-1.124 2.91 2.91 0 0 1-.416-2.096 3.06 3.06 0 0 1 .632-1.579L8.765 8.16l3.806-4.048c.28-.297.438-.697.438-1.112A1.4 1.4 0 0 0 13.483 0zm4.84 8.795a1.37 1.37 0 0 0-1.37 1.37v5.67a1.37 1.37 0 0 0 2.74 0v-5.67a1.37 1.37 0 0 0-1.37-1.37z">
+                  </path>
+                </svg>
+              </a>
+
+              <a href="mailto:shekhar0050m@gmail.com" class="hero-social-link" title="Direct Email">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Profile Card / Showcase Widget -->
+          <div class="hero-card-container">
+            <div class="hero-profile-card">
+              <div class="profile-header">
+                <div class="avatar-wrapper">
+                  <img src="assets/img/shekhar-avatar.png" alt="Shekhar Suman" class="avatar-img" />
+                </div>
+                <div class="profile-info">
+                  <h3>Shekhar Suman</h3>
+                  <div class="profile-role-tag">SAP ABAP Developer • IBM</div>
+                  <div class="profile-location">
+                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    Bhubaneswar, Odisha, India
+                  </div>
+                </div>
+              </div>
+
+              <!-- Real-world Impact Metrics -->
+              <div class="profile-stats-grid">
+                <div class="stat-box">
+                  <div class="stat-number">3x</div>
+                  <div class="stat-label">SAP Certified</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-number">579+</div>
+                  <div class="stat-label">LeetCode Solved</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-number">9.19</div>
+                  <div class="stat-label">CGPA (B.Tech IT)</div>
+                </div>
+                <div class="stat-box">
+                  <div class="stat-number">35%</div>
+                  <div class="stat-label">Batch Optimization</div>
+                </div>
+              </div>
+
+              <div class="hero-card-footer">
+                <span class="verified-pill">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Credly & Enterprise Verified
+                </span>
+                <span style="font-family: var(--font-mono);">IBM • Oct 2023 – Present</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         PROFESSIONAL ENTERPRISE EXPERIENCE (IBM)
+         ===================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Enterprise Experience</div>
+          <h2 class="section-title">Industry Track Record at <span class="gradient-text">IBM</span></h2>
+          <p class="section-desc">
+            Driving core enterprise stability, integrations, and high-performance business applications in SAP ECC 6.0
+            and S/4HANA environments.
+          </p>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role-title">SAP ABAP Developer</h3>
+              <div class="exp-company-group">
+                <span class="company-badge-ibm">IBM</span>
+                <span>Enterprise Consulting Services</span>
+                <span>•</span>
+                <span style="color: var(--text-muted);">HR Module & Satellite Integrations</span>
+              </div>
+            </div>
+            <div class="exp-date-badge">October 2023 – Present (Active)</div>
+          </div>
+
+          <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 0.98rem; line-height: 1.6;">
+            Delivered end-to-end mission-critical <strong>RICEFW deliverables</strong> on <strong>SAP ECC 6.0</strong>,
+            orchestrating seamless integrations, automated data pipelines, and optimized runtime performance across the
+            enterprise HR landscape.
+          </p>
+
+          <div class="exp-highlights-grid">
+            <div class="exp-highlight-item">
+              <div class="exp-item-icon">📊</div>
+              <h4 class="exp-item-title">Interactive ALV Reports</h4>
+              <p class="exp-item-desc">
+                Engineered complex grid & interactive reports using <strong>CL_SALV_TABLE</strong> and
+                <strong>REUSE_ALV</strong>, delivering real-time analytical operational dashboards for enterprise HR
+                leadership.
+              </p>
+            </div>
+
+            <div class="exp-highlight-item">
+              <div class="exp-item-icon">🔄</div>
+              <h4 class="exp-item-title">BAPIs, RFCs & System Integration</h4>
+              <p class="exp-item-desc">
+                Built and maintained secure custom <strong>BAPIs and RFC function modules</strong> establishing reliable
+                bidirectional data transfer between SAP ECC and satellite non-SAP enterprise systems.
+              </p>
+            </div>
+
+            <div class="exp-highlight-item">
+              <div class="exp-item-icon">⚡</div>
+              <h4 class="exp-item-title">ALE / IDoc Data Automation</h4>
+              <p class="exp-item-desc">
+                Configured and monitored automated <strong>ALE / IDocs</strong> communication pipelines, automating
+                inbound/outbound data transmission while resolving transactional boundary errors.
+              </p>
+            </div>
+
+            <div class="exp-highlight-item">
+              <div class="exp-item-icon">🧩</div>
+              <h4 class="exp-item-title">Enhancements & Custom Logic</h4>
+              <p class="exp-item-desc">
+                Implemented custom business validations using modern <strong>New Kernel-BAdIs, Classic BAdIs, Customer
+                  Exits, and Implicit Enhancement Points</strong> without violating Clean Core principles.
+              </p>
+            </div>
+
+            <div class="exp-highlight-item">
+              <div class="exp-item-icon">📄</div>
+              <h4 class="exp-item-title">SmartForms & Adobe Forms</h4>
+              <p class="exp-item-desc">
+                Designed and maintained enterprise multilingual <strong>SmartForms and Adobe Document Services (ADS)
+                  forms</strong> for regulatory compliance and employee record documentation.
+              </p>
+            </div>
+
+            <div class="exp-highlight-item">
+              <div class="exp-item-icon">🚀</div>
+              <h4 class="exp-item-title">35% Performance Tuning & ATC</h4>
+              <p class="exp-item-desc">
+                Conducted deep query profiling using <strong>ST05 (SQL Trace)</strong> and <strong>SAT (Runtime
+                  Analysis)</strong>, optimizing heavy batch runtimes by <strong>35%</strong> with zero ATC defects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         OFFICIAL SAP CERTIFICATIONS & CREDENTIALS
+         ===================================================================== -->
+    <section id="certifications" class="section" style="background: rgba(255, 255, 255, 0.01);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Official Credentials</div>
+          <h2 class="section-title">SAP <span class="gradient-text">Certifications</span></h2>
+          <p class="section-desc">
+            Directly verified via Credly. Comprehensive validation across modern ABAP Cloud, Fiori User Experience, and
+            Generative AI architectures.
+          </p>
+        </div>
+
+        <div class="cert-cards-grid">
+          <!-- Cert 1: ABAP Cloud -->
+          <div class="cert-card-premium">
+            <div>
+              <div class="cert-badge-visual">
+                <img src="assets/img/badge_abap_cloud.png" alt="SAP Certified Back-End Developer - ABAP Cloud" />
+              </div>
+              <div class="cert-issuer">SAP Certified Official Badge</div>
+              <h3 class="cert-name">Back-End Developer — ABAP Cloud</h3>
+              <p class="cert-details">
+                Mastery of the ABAP RESTful Application Programming Model (RAP), Clean Core extensibility, Behavior
+                Definitions (BDEF), and S/4HANA Cloud architecture.
+              </p>
+              <div class="cert-tags-row">
+                <span class="cert-mini-tag">ABAP RAP</span>
+                <span class="cert-mini-tag">Clean Core</span>
+                <span class="cert-mini-tag">S/4HANA</span>
+                <span class="cert-mini-tag">CDS Views</span>
+              </div>
+            </div>
+            <a href="https://www.credly.com/badges/dd4a127d-c55a-4bfa-8a96-862f7b793efc" target="_blank"
+              rel="noopener noreferrer" class="btn-credly-verify">
+              <span>Verify Credly Badge</span>
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Cert 2: Fiori Application Developer -->
+          <div class="cert-card-premium">
+            <div>
+              <div class="cert-badge-visual">
+                <img src="assets/img/badge_sap_fiori.png" alt="SAP Certified - SAP Fiori Application Developer" />
+              </div>
+              <div class="cert-issuer">SAP Certified Official Badge</div>
+              <h3 class="cert-name">SAP Fiori Application Developer</h3>
+              <p class="cert-details">
+                Engineering responsive enterprise applications using SAPUI5, SAP Fiori Elements (List Report & Object
+                Page), OData service consumption, and BAS deployment.
+              </p>
+              <div class="cert-tags-row">
+                <span class="cert-mini-tag">SAPUI5</span>
+                <span class="cert-mini-tag">Fiori Elements</span>
+                <span class="cert-mini-tag">OData v2/v4</span>
+                <span class="cert-mini-tag">BAS</span>
+              </div>
+            </div>
+            <a href="https://www.credly.com/badges/e8319a46-bab1-489a-91e7-591672a1e115" target="_blank"
+              rel="noopener noreferrer" class="btn-credly-verify">
+              <span>Verify Credly Badge</span>
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Cert 3: Generative AI Developer -->
+          <div class="cert-card-premium">
+            <div>
+              <div class="cert-badge-visual">
+                <img src="assets/img/badge_sap_genai.png" alt="SAP Certified - SAP Generative AI Developer" />
+              </div>
+              <div class="cert-issuer">SAP Certified Official Badge</div>
+              <h3 class="cert-name">SAP Generative AI Developer</h3>
+              <p class="cert-details">
+                Architecting intelligent enterprise workflows leveraging SAP Business AI, SAP AI Core, AI Launchpad,
+                and extending BTP applications with GenAI Hub foundation models.
+              </p>
+              <div class="cert-tags-row">
+                <span class="cert-mini-tag">SAP AI Core</span>
+                <span class="cert-mini-tag">GenAI Hub</span>
+                <span class="cert-mini-tag">SAP BTP</span>
+                <span class="cert-mini-tag">Business AI</span>
+              </div>
+            </div>
+            <a href="https://www.credly.com/badges/f6c79c5b-3c17-4a52-a06e-148c590e1b5f" target="_blank"
+              rel="noopener noreferrer" class="btn-credly-verify">
+              <span>Verify Credly Badge</span>
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         FEATURED FULL-STACK SAP & MODERN PROJECTS
+         ===================================================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Featured Architectures</div>
+          <h2 class="section-title">Full-Stack <span class="gradient-text">SAP & Cloud</span> Projects</h2>
+          <p class="section-desc">
+            Production-grade architectures uniting modern ABAP RESTful backend pipelines with sleek SAPUI5 / Fiori
+            dashboards.
+          </p>
+        </div>
+
+        <!-- Project 1: P2P Analytics Engine (S/4HANA Full-Stack) -->
+        <div class="project-card-featured">
+          <div class="project-top-meta">
+            <span class="project-category-badge">SAP S/4HANA Full-Stack Engine</span>
+            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-blue);">ABAP RAP +
+              Fiori Elements</span>
+          </div>
+
+          <h3 class="project-title">Enterprise Procure-to-Pay (P2P) Analytics Engine</h3>
+
+          <p class="project-desc">
+            Architected an end-to-end full-stack procurement analytics and purchase order lifecycle system on <strong>SAP
+              S/4HANA</strong>. Combines an <strong>ABAP RAP managed backend</strong> with an intuitive <strong>SAP
+              Fiori Elements List Report & Object Page</strong> frontend featuring real-time KPI analytical cards.
+          </p>
+
+          <ul class="project-features-list">
+            <li>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Multi-layer CDS Views:</strong> ZC_ProcureOrder, ZI_ProcureOrderComp, ZC_POItem01 with
+                associations & aggregations.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>RAP Behavior Definitions (BDEF):</strong> Managed scenario with custom validations,
+                determinations, and Side Effects for live rollups.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>OData v4 Service Binding:</strong> Exposed clean metadata consumed by Fiori List Report with
+                dynamic filtering & status charts.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Automated Test Seeding:</strong> Built zcl_p2p_data_generator engine for instant demo data
+                population and mock integration.</span>
+            </li>
+          </ul>
+
+          <div class="project-tech-stack">
+            <span class="tech-tag">SAP S/4HANA</span>
+            <span class="tech-tag">ABAP RAP</span>
+            <span class="tech-tag">CDS Views</span>
+            <span class="tech-tag">BDEF</span>
+            <span class="tech-tag">Side Effects</span>
+            <span class="tech-tag">OData v4</span>
+            <span class="tech-tag">SAP Fiori Elements</span>
+          </div>
+
+          <div class="project-links-row">
+            <a href="https://github.com/Shekhar0050M/s4hana-p2p-analytics-engine" target="_blank"
+              rel="noopener noreferrer" class="btn-primary">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+                </path>
+              </svg>
+              View GitHub Repository ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: Sales Order Web App & CI/CD Pipeline -->
+        <div class="project-card-featured">
+          <div class="project-top-meta">
+            <span class="project-category-badge"
+              style="background: rgba(16, 185, 129, 0.15); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.3);">Enterprise
+              Web Application</span>
+            <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-emerald);">SAPUI5 +
+              OData + abapGit</span>
+          </div>
+
+          <h3 class="project-title">Enterprise Sales Order Web App & CI/CD Pipeline</h3>
+
+          <p class="project-desc">
+            Engineered a responsive, high-performance <strong>SAPUI5</strong> Sales Order management web application
+            consuming SAP Gateway <strong>OData v2/v4</strong> services. Implemented real-time order filtering, status
+            tracking, and modern automated deployment.
+          </p>
+
+          <ul class="project-features-list">
+            <li>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>SAP Gateway Integration:</strong> Consumes /IWFND/ OData endpoints with reliable model
+                binding and error handling.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>abapGit Version Control:</strong> Automated version tracking, modularizing ABAP objects and
+                SAPUI5 assets into Git.</span>
+            </li>
+            <li>
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span><strong>Cloud & CORS Troubleshooting:</strong> Configured SAP BTP destination routing and cross-origin
+                headers for zero downtime.</span>
+            </li>
+          </ul>
+
+          <div class="project-tech-stack">
+            <span class="tech-tag">SAPUI5</span>
+            <span class="tech-tag">SAP Gateway</span>
+            <span class="tech-tag">OData Services</span>
+            <span class="tech-tag">abapGit</span>
+            <span class="tech-tag">SAP BTP</span>
+            <span class="tech-tag">CI/CD</span>
+          </div>
+
+          <div class="project-links-row">
+            <a href="https://github.com/Shekhar0050M/salesorder" target="_blank" rel="noopener noreferrer"
+              class="btn-primary">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+                </path>
+              </svg>
+              View GitHub Repository ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Secondary Compact Projects Grid -->
+        <div class="projects-subgrid">
+          <div class="project-card-compact">
+            <div>
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-purple);">
+                <span>OPEN SOURCE</span>
+                <span>DSA Architecture</span>
+              </div>
+              <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 8px;">Cectus</h4>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 16px;">
+                Comprehensive curated repository of data structure architectures, complex algorithmic paradigms, and
+                computational patterns.
+              </p>
+            </div>
+            <a href="https://github.com/Shekhar0050M/Cectus" target="_blank" rel="noopener noreferrer"
+              class="btn-credly-verify">
+              Explore Cectus on GitHub ↗
+            </a>
+          </div>
+
+          <div class="project-card-compact">
+            <div>
+              <div
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-emerald);">
+                <span>ALGORITHMS</span>
+                <span>579+ Problems</span>
+              </div>
+              <h4 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 8px;">LeetCode Algorithmic Footprint</h4>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 16px;">
+                579+ problems solved covering Dynamic Programming, Graph Theory, Binary Trees, Greedy algorithms, and
+                high-efficiency data structures.
+              </p>
+            </div>
+            <a href="https://leetcode.com/shekhar0050m/" target="_blank" rel="noopener noreferrer"
+              class="btn-credly-verify">
+              View LeetCode Profile ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         TECHNICAL SKILLS MATRIX
+         ===================================================================== -->
+    <section id="skills" class="section" style="background: rgba(255, 255, 255, 0.01);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Competencies</div>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills Matrix</span></h2>
+          <p class="section-desc">
+            Enterprise ABAP specialization paired with modern cloud, web services, and full-stack development tooling.
+          </p>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Category 1 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">⚙️</div>
+              <div class="skill-cat-title">Core & Modern ABAP</div>
+            </div>
+            <div class="skills-pill-wrap">
+              <span class="skill-pill">ABAP 7.4 / 7.5</span>
+              <span class="skill-pill">OOP ABAP</span>
+              <span class="skill-pill">ABAP RAP (Managed)</span>
+              <span class="skill-pill">Behavior Definitions (BDEF)</span>
+              <span class="skill-pill">EML (Entity Manipulation)</span>
+              <span class="skill-pill">Validations & Determinations</span>
+              <span class="skill-pill">Transactional Side Effects</span>
+              <span class="skill-pill">CDS Views (Analytical / Core)</span>
+              <span class="skill-pill">SALV Grid / Classical ALV</span>
+              <span class="skill-pill">Module Pool Programming</span>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🌐</div>
+              <div class="skill-cat-title">Integration & Web Services</div>
+            </div>
+            <div class="skills-pill-wrap">
+              <span class="skill-pill">SAP Gateway (/IWFND/)</span>
+              <span class="skill-pill">OData v2 / v4</span>
+              <span class="skill-pill">Service Definitions</span>
+              <span class="skill-pill">Service Bindings</span>
+              <span class="skill-pill">BAPIs & RFCs</span>
+              <span class="skill-pill">ALE / IDocs</span>
+              <span class="skill-pill">SAP BTP Connectivity</span>
+              <span class="skill-pill">Destination Routing</span>
+              <span class="skill-pill">CORS Resolution</span>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">🧩</div>
+              <div class="skill-cat-title">Enhancements & Forms</div>
+            </div>
+            <div class="skills-pill-wrap">
+              <span class="skill-pill">Enhancement Framework</span>
+              <span class="skill-pill">New Kernel-BAdIs</span>
+              <span class="skill-pill">Classic BAdIs</span>
+              <span class="skill-pill">Customer & User Exits</span>
+              <span class="skill-pill">Implicit Enhancements</span>
+              <span class="skill-pill">SmartForms</span>
+              <span class="skill-pill">Adobe Document Services</span>
+              <span class="skill-pill">BDC (Batch Data Comm)</span>
+              <span class="skill-pill">LSMW</span>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">💻</div>
+              <div class="skill-cat-title">UI5, Cloud & Tooling</div>
+            </div>
+            <div class="skills-pill-wrap">
+              <span class="skill-pill">SAPUI5</span>
+              <span class="skill-pill">SAP Fiori Elements</span>
+              <span class="skill-pill">List Report / Object Page</span>
+              <span class="skill-pill">SAP BAS</span>
+              <span class="skill-pill">Eclipse ADT</span>
+              <span class="skill-pill">abapGit</span>
+              <span class="skill-pill">ATC (ABAP Test Cockpit)</span>
+              <span class="skill-pill">ST05 (SQL Trace)</span>
+              <span class="skill-pill">SAT (Runtime Profiler)</span>
+              <span class="skill-pill">SAP HR Module</span>
+              <span class="skill-pill">SAP MM (Procure-to-Pay)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         EDUCATION & PROBLEM SOLVING
+         ===================================================================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Academic & Analytical Foundation</div>
+          <h2 class="section-title">Education & <span class="gradient-text">Problem Solving</span></h2>
+          <p class="section-desc">
+            Rigorous computer science fundamentals combined with a strong competitive coding track record.
+          </p>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Academic Degree -->
+          <div class="edu-card">
+            <div
+              style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+              <div>
+                <h3 class="edu-institution">Institute of Engineering and Management (IEM)</h3>
+                <div class="edu-degree">B.Tech in Information Technology</div>
+              </div>
+              <span class="company-badge-ibm" style="background: rgba(56, 189, 248, 0.15); color: var(--accent-blue);">Kolkata,
+                India</span>
+            </div>
+
+            <div class="edu-cgpa-badge">CGPA: 9.19 / 10.0</div>
+
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 14px;">
+              Graduated with top academic standing. Honored as a <strong>Merit Scholar and Special Achiever</strong> for
+              exemplary performance in analytical and computing subjects.
+            </p>
+
+            <div style="font-size: 0.84rem; color: var(--text-muted); line-height: 1.5;">
+              <strong style="color: var(--text-secondary);">Core Coursework:</strong> Database Management Systems
+              (DBMS), Data Structures & Algorithms, Object-Oriented Analysis & Design, Computer Networks, Software
+              Engineering, Operating Systems.
+            </div>
+          </div>
+
+          <!-- Problem Solving / LeetCode -->
+          <div class="edu-card">
+            <div
+              style="display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+              <div>
+                <h3 class="edu-institution">Algorithmic Problem Solving</h3>
+                <div class="edu-degree">LeetCode & Competitive Coding</div>
+              </div>
+              <a href="https://leetcode.com/shekhar0050m/" target="_blank" rel="noopener noreferrer"
+                class="cert-mini-tag" style="color: var(--accent-amber); border-color: rgba(245, 158, 11, 0.3);">
+                579+ Solved ↗
+              </a>
+            </div>
+
+            <div class="leetcode-breakdown-bar" title="Problem Distribution">
+              <div class="lc-segment-easy" title="271 Easy"></div>
+              <div class="lc-segment-med" title="276 Medium"></div>
+              <div class="lc-segment-hard" title="32 Hard"></div>
+            </div>
+
+            <div class="lc-stats-row">
+              <span style="color: #00b8a3;">● 271 Easy</span>
+              <span style="color: #ffc01e;">● 276 Medium</span>
+              <span style="color: #ff375f;">● 32 Hard</span>
+            </div>
+
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-top: 20px;">
+              Consistent practice tackling high-complexity computational challenges. Deep algorithmic mastery in
+              Dynamic Programming, Graph traversals (DFS/BFS, Dijkstra), Trees, Bitwise Operations, and optimal time-space
+              tradeoffs.
+            </p>
+
+            <div style="margin-top: 18px; display: flex; gap: 10px;">
+              <a href="https://leetcode.com/shekhar0050m/" target="_blank" rel="noopener noreferrer"
+                class="btn-credly-verify" style="padding: 6px 14px; font-size: 0.82rem;">
+                View LeetCode Profile
+              </a>
+              <a href="https://github.com/Shekhar0050M" target="_blank" rel="noopener noreferrer"
+                class="btn-credly-verify" style="padding: 6px 14px; font-size: 0.82rem;">
+                GitHub Footprint (60+ Repos)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         CONTACT & CONNECT SECTION
+         ===================================================================== -->
+    <section id="contact" class="section" style="background: rgba(255, 255, 255, 0.01);">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Let's Connect</div>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-desc">
+            Available for technical discussions, enterprise SAP architectures, clean core consultations, and career
+            collaborations.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3 style="font-size: 1.45rem; font-weight: 800; margin-bottom: 8px;">Direct Communication</h3>
+            <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 24px; line-height: 1.6;">
+              Feel free to reach out directly via email, phone, or connect with me on LinkedIn.
+            </p>
+
+            <div class="contact-method-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Email Address</div>
+                <div class="contact-value"><a href="mailto:shekhar0050m@gmail.com">shekhar0050m@gmail.com</a></div>
+              </div>
+              <button class="contact-copy-btn" data-copy="shekhar0050m@gmail.com" title="Copy Email">Copy</button>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Phone & WhatsApp</div>
+                <div class="contact-value"><a href="tel:+918873242785">+91 8873242785</a></div>
+              </div>
+              <button class="contact-copy-btn" data-copy="+918873242785" title="Copy Phone Number">Copy</button>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Bhubaneswar, Odisha, India</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Action Box -->
+          <div class="contact-info-card" style="text-align: center; padding: 44px 36px;">
+            <div
+              style="width: 64px; height: 64px; border-radius: 50%; background: var(--gradient-sap); color: white; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; font-size: 1.5rem; box-shadow: 0 4px 18px rgba(10, 110, 209, 0.4);">
+              💼
+            </div>
+            <h3 style="font-size: 1.55rem; font-weight: 800; margin-bottom: 12px;">Looking for an SAP Expert?</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; margin-bottom: 28px;">
+              Whether you need Clean Core ABAP RAP implementation, SAP Gateway OData integrations, or modern SAPUI5
+              applications, let's connect and build exceptional enterprise solutions.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <a href="mailto:shekhar0050m@gmail.com?subject=Enterprise%20SAP%20Inquiry" class="btn-primary"
+                style="justify-content: center;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+                Send an Email Message
+              </a>
+              <a href="https://www.linkedin.com/in/shekhar0050m/" target="_blank" rel="noopener noreferrer"
+                class="btn-secondary" style="justify-content: center;">
+                Connect on LinkedIn ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       INTERACTIVE RESUME MODAL & VIEWER
+       ===================================================================== -->
+  <div id="resume-modal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
+    <div class="resume-modal-dialog">
+      <div class="resume-modal-header">
+        <div class="modal-title" id="resume-modal-title">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            style="color: var(--accent-blue);">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+            </path>
+          </svg>
+          <span>Shekhar Suman — Exact 1-Page A4 Resume</span>
+        </div>
+
+        <div class="modal-header-actions">
+          <a href="assets/Shekhar_Suman_Resume.pdf" download="Shekhar_Suman_Resume.pdf" class="btn-primary-sm">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            Download PDF
+          </a>
+
+          <a href="resume.html" target="_blank" class="btn-icon" title="Open in New Tab / Print">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+
+          <button id="close-resume-modal" class="btn-icon" aria-label="Close Resume Modal">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-modal-body">
+        <iframe src="resume.html" title="Shekhar Suman Resume Preview" class="resume-iframe"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Element -->
+  <div id="portfolio-toast" class="toast-notice" role="alert" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          © 2026 <strong>Shekhar Suman</strong>. Engineered with modern vanilla web technologies & hosted on
+          <a href="https://github.com/Shekhar0050M/shekhar0050m.github.io" target="_blank" rel="noopener noreferrer"
+            style="color: var(--accent-blue); text-decoration: underline;">GitHub Pages</a>.
+        </div>
+        <div class="footer-social-row">
+          <a href="https://www.linkedin.com/in/shekhar0050m/" target="_blank" rel="noopener noreferrer"
+            class="hero-social-link" style="width: 36px; height: 36px;" title="LinkedIn">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.72a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://github.com/Shekhar0050M" target="_blank" rel="noopener noreferrer" class="hero-social-link"
+            style="width: 36px; height: 36px;" title="GitHub">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://leetcode.com/shekhar0050m/" target="_blank" rel="noopener noreferrer"
+            class="hero-social-link" style="width: 36px; height: 36px;" title="LeetCode">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.874 5.874 0 0 0 .349 1.017 5.938 5.938 0 0 0 .481.843 5.49 5.49 0 0 0 4.19 2.493 5.66 5.66 0 0 0 2.387-.41 5.397 5.397 0 0 0 1.126-.658l3.458-2.793a1.353 1.353 0 0 0 .25-1.895 1.38 1.38 0 0 0-1.91-.248L8.77 16.58a3.003 3.003 0 0 1-1.077.538 2.87 2.87 0 0 1-1.258.077 2.744 2.744 0 0 1-1.76-1.124 2.91 2.91 0 0 1-.416-2.096 3.06 3.06 0 0 1 .632-1.579L8.765 8.16l3.806-4.048c.28-.297.438-.697.438-1.112A1.4 1.4 0 0 0 13.483 0zm4.84 8.795a1.37 1.37 0 0 0-1.37 1.37v5.67a1.37 1.37 0 0 0 2.74 0v-5.67a1.37 1.37 0 0 0-1.37-1.37z">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Portfolio JavaScript -->
+  <script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shekhar Suman - SAP ABAP & Full-Stack Developer Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #1d4ed8;
+      --text: #1e293b;
+      --text-muted: #475569;
+      --border: #cbd5e1;
+      --bg: #e2e8f0;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.28;
+      font-size: 8.7pt;
+      -webkit-font-smoothing: antialiased;
+      padding: 16px 8px;
+    }
+
+    /* Top Toolbar */
+    .toolbar {
+      max-width: 210mm;
+      margin: 0 auto 10px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--card-bg);
+      padding: 8px 16px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+
+    .toolbar-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .btn-print {
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-print:hover {
+      background: #1e40af;
+    }
+
+    /* Exact A4 Sheet */
+    .resume-container {
+      width: 210mm;
+      max-width: 100%;
+      height: 296mm;
+      max-height: 296mm;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 8mm 10mm;
+      border-radius: 3px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1.5px solid var(--primary);
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .headline {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 1px;
+    }
+
+    .contact-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3px 8px;
+      margin-top: 3px;
+      font-size: 8.2pt;
+      color: var(--text-muted);
+    }
+
+    .contact-bar a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-bar a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+
+    .contact-sep {
+      color: #94a3b8;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 4px;
+    }
+
+    .section-title {
+      font-size: 8.8pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--primary);
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 1px;
+      margin-bottom: 3px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 8.4pt;
+      color: #334155;
+      line-height: 1.28;
+      text-align: justify;
+    }
+
+    /* Skills Grid */
+    .skills-table {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      font-size: 8.3pt;
+    }
+
+    .skill-row {
+      display: flex;
+      line-height: 1.24;
+    }
+
+    .skill-label {
+      width: 155px;
+      min-width: 155px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .skill-val {
+      color: #334155;
+      flex: 1;
+    }
+
+    /* Certifications Grid */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      margin-top: 1px;
+    }
+
+    .cert-card {
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      padding: 3px 5px;
+      border-radius: 3px;
+      border-left: 2.5px solid var(--accent);
+    }
+
+    .cert-title {
+      font-size: 7.9pt;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.15;
+    }
+
+    .cert-link {
+      font-size: 7.4pt;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 1px;
+    }
+
+    .cert-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Experience & Projects */
+    .item-card {
+      margin-bottom: 4px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .item-title-group {
+      font-size: 8.7pt;
+    }
+
+    .item-company {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .item-role {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .item-meta {
+      font-size: 7.9pt;
+      color: var(--text-muted);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .item-meta a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .item-bullets {
+      list-style-type: square;
+      padding-left: 13px;
+      margin-top: 1px;
+    }
+
+    .item-bullets li {
+      font-size: 8.25pt;
+      color: #334155;
+      margin-bottom: 1.5px;
+      line-height: 1.25;
+    }
+
+    .item-bullets strong {
+      color: var(--primary);
+    }
+
+    /* Education & Highlights Grid */
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* PRINT EXACT SINGLE PAGE RULES */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 5mm 7mm 5mm 7mm !important;
+      }
+
+      html, body {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #ffffff !important;
+        font-size: 8.4pt !important;
+        line-height: 1.24 !important;
+      }
+
+      .toolbar {
+        display: none !important;
+      }
+
+      .resume-container {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        page-break-after: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      a {
+        text-decoration: none !important;
+        color: inherit !important;
+      }
+
+      .cert-card {
+        border: 1px solid #cbd5e1 !important;
+        background: transparent !important;
+      }
+
+      section {
+        margin-bottom: 3px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <div class="toolbar-title">📄 Shekhar Suman — Exact 1-Page A4 Resume (No Page 2 Overflow)</div>
+    <button class="btn-print" onclick="window.print()">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+        <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+      </svg>
+      Print / Save to PDF (A4)
+    </button>
+  </div>
+
+  <div class="resume-container">
+    <!-- Header -->
+    <header>
+      <h1>Shekhar Suman</h1>
+      <div class="headline">SAP ABAP & Full-Stack Developer (ABAP + UI5 / Fiori)</div>
+      <div class="contact-bar">
+        <span>Bhubaneswar, Odisha</span>
+        <span class="contact-sep">•</span>
+        <a href="tel:+918873242785">+91 8873242785</a>
+        <span class="contact-sep">•</span>
+        <a href="mailto:shekhar0050m@gmail.com">shekhar0050m@gmail.com</a>
+        <span class="contact-sep">•</span>
+        <a href="https://www.linkedin.com/in/shekhar0050m/" target="_blank">LinkedIn</a>
+        <span class="contact-sep">•</span>
+        <a href="https://github.com/Shekhar0050M" target="_blank">GitHub</a>
+        <span class="contact-sep">•</span>
+        <a href="https://leetcode.com/shekhar0050m/" target="_blank">LeetCode</a>
+        <span class="contact-sep">•</span>
+        <a href="https://shekhar0050m.github.io" target="_blank">Portfolio</a>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        <strong>SAP ABAP & Full-Stack Developer</strong> with enterprise experience in <strong>SAP ECC 6.0</strong> systems and next-generation <strong>SAP S/4HANA Full-Stack (ABAP + SAPUI5/Fiori)</strong> architectures. Experienced at <strong>IBM</strong> engineering robust <strong>RICEFW</strong> deliverables, interactive ALV reports, BAPIs, RFCs, BAdIs, and IDocs across the HR module. Proven full-stack project expertise implementing <strong>ABAP RAP</strong> (Managed scenario, Validations, Determinations, Side Effects), <strong>CDS Views</strong>, <strong>OData v2/v4</strong>, and <strong>SAP Fiori Elements</strong> dashboards. Strong algorithmic problem solver with <strong>570+ LeetCode problems solved</strong> and a <strong>9.19 CGPA in B.Tech IT from IEM Kolkata</strong>.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-table">
+        <div class="skill-row">
+          <span class="skill-label">Core & Modern ABAP:</span>
+          <span class="skill-val">ABAP 7.4/7.5, OOP ABAP, ABAP RAP (Managed), Behavior Definitions (BDEF), EML, Validations, Determinations, Side Effects, CDS Views, Classical & Interactive ALV (SALV), Module Pool</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Integration & Web Services:</span>
+          <span class="skill-val">SAP Gateway (/IWFND/), OData v2/v4, Service Definitions & Bindings, BAPI, RFC, ALE / IDocs, SAP BTP Connectivity, CORS</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">Enhancements & Forms:</span>
+          <span class="skill-val">Enhancement Framework, Kernel-BAdIs, Classic BAdIs, User/Customer Exits, SmartForms, Adobe Forms, BDC, LSMW</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-label">UI5, Tools & Modules:</span>
+          <span class="skill-val">SAPUI5, Fiori Elements (List Report, Object Page), BAS, Eclipse ADT, abapGit, ATC (Test Cockpit), ST05 (SQL Trace), SAT (Runtime), SAP HR, SAP MM (P2P)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+      <div class="section-title">SAP Certifications & Credentials</div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-title">1. Back-End Developer - ABAP Cloud</div>
+          <div style="font-size: 7.4pt; color: #475569;">SAP Certified • RAP & Clean Core</div>
+          <a class="cert-link" href="https://www.credly.com/badges/dd4a127d-c55a-4bfa-8a96-862f7b793efc" target="_blank">Verify Credly Badge ↗</a>
+        </div>
+        <div class="cert-card">
+          <div class="cert-title">2. SAP Fiori Application Developer</div>
+          <div style="font-size: 7.4pt; color: #475569;">SAP Certified • UI5 & Fiori Elements</div>
+          <a class="cert-link" href="https://www.credly.com/badges/e8319a46-bab1-489a-91e7-591672a1e115" target="_blank">Verify Credly Badge ↗</a>
+        </div>
+        <div class="cert-card">
+          <div class="cert-title">3. SAP Generative AI Developer</div>
+          <div style="font-size: 7.4pt; color: #475569;">SAP Certified • AI Core & BTP GenAI Hub</div>
+          <a class="cert-link" href="https://www.credly.com/badges/f6c79c5b-3c17-4a52-a06e-148c590e1b5f" target="_blank">Verify Credly Badge ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <div class="section-title">Professional Experience</div>
+      <div class="item-card">
+        <div class="item-header">
+          <div class="item-title-group">
+            <span class="item-company">IBM</span> — <span class="item-role">SAP ABAP Developer</span>
+          </div>
+          <span class="item-meta">India | October 2023 – Present</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Delivered and maintained robust <strong>RICEFW deliverables</strong> on <strong>SAP ECC 6.0</strong> supporting business processes across the <strong>HR</strong> module.</li>
+          <li>Engineered interactive and grid <strong>ALV reports</strong> (CL_SALV_TABLE, REUSE_ALV) delivering real-time operational analytics for HR and enterprise teams.</li>
+          <li>Built custom <strong>BAPIs and RFC function modules</strong> establishing reliable bidirectional data exchange between SAP ECC and satellite non-SAP enterprise systems.</li>
+          <li>Configured and monitored <strong>ALE/IDoc interfaces</strong>, automating enterprise data exchanges and resolving transactional transmission errors.</li>
+          <li>Implemented custom validations via <strong>New Kernel-BAdIs, Customer Exits, and Implicit Enhancement Points</strong>; built multilingual <strong>SmartForms and Adobe Forms</strong>.</li>
+          <li>Conducted performance query tuning using <strong>ST05 (SQL Trace)</strong> and <strong>SAT (Runtime)</strong>, improving high-volume batch runtimes by <strong>35%</strong>; maintained zero ATC defects.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Key Full-Stack Projects -->
+    <section>
+      <div class="section-title">Full-Stack SAP Projects (ABAP + UI5 / Fiori)</div>
+
+      <div class="item-card">
+        <div class="item-header">
+          <div class="item-title-group">
+            <span class="item-company">Enterprise Procure-to-Pay (P2P) Analytics Engine</span> — <span class="item-role">SAP S/4HANA Full-Stack</span>
+          </div>
+          <span class="item-meta"><a href="https://github.com/Shekhar0050M/s4hana-p2p-analytics-engine" target="_blank">GitHub Repo ↗</a></span>
+        </div>
+        <ul class="item-bullets">
+          <li>Architected end-to-end full-stack <strong>P2P procurement engine</strong> on SAP S/4HANA combining <strong>ABAP RAP</strong> backend and <strong>SAP Fiori Elements</strong> frontend.</li>
+          <li>Modeled multi-layer <strong>CDS Views</strong> (ZC_ProcureOrder, ZI_ProcureOrderComp, ZC_POItem01) with associations, aggregations, and analytical annotations for PO lifecycle tracking.</li>
+          <li>Engineered <strong>RAP Behavior Definitions (BDEF)</strong> managed scenario with validations, determinations, and transactional <strong>Side Effects</strong> for real-time calculation of header totals.</li>
+          <li>Built automated ABAP test seeding engines (zcl_p2p_data_generator) and exposed <strong>OData v4</strong> services consumed by an interactive Fiori List Report & Object Page with KPI cards.</li>
+        </ul>
+      </div>
+
+      <div class="item-card" style="margin-bottom: 1px;">
+        <div class="item-header">
+          <div class="item-title-group">
+            <span class="item-company">Enterprise Sales Order Web App & CI/CD Pipeline</span> — <span class="item-role">SAP UI5, OData & abapGit</span>
+          </div>
+          <span class="item-meta"><a href="https://github.com/Shekhar0050M/salesorder" target="_blank">GitHub Repo ↗</a></span>
+        </div>
+        <ul class="item-bullets">
+          <li>Developed responsive <strong>SAPUI5</strong> Sales Order management web app consuming Gateway <strong>OData v2/v4</strong> services with real-time order filtering and status tracking.</li>
+          <li>Configured <strong>abapGit</strong> version control and automated CI/CD deployment pipelines; resolved <strong>CORS</strong> and destination routing on SAP BTP.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education & Achievements Side-by-Side -->
+    <section style="margin-bottom: 0;">
+      <div class="split-grid">
+        <div>
+          <div class="section-title">Education</div>
+          <div style="font-size: 8.6pt; font-weight: 700; color: var(--primary);">Institute of Engineering & Management (IEM), Kolkata</div>
+          <div style="font-size: 8.1pt; color: var(--accent); font-weight: 600;">B.Tech in Information Technology • <strong>CGPA: 9.19 / 10.0</strong></div>
+          <div style="font-size: 7.7pt; color: #475569;">Coursework: DBMS, Data Structures & Algorithms, OOP, Networks, Software Eng.</div>
+        </div>
+        <div>
+          <div class="section-title">Problem Solving & Footprint</div>
+          <ul class="item-bullets" style="padding-left: 11px; margin-top: 1px;">
+            <li><strong>LeetCode:</strong> Solved <strong>579+ algorithm problems</strong> (271 Easy, 276 Med, 32 Hard).</li>
+            <li><strong>SAP Community:</strong> Active technical contributor on OData CORS, BTP & ABAP.</li>
+            <li><strong>Open Source:</strong> Author of <strong>Cectus</strong> and 60+ repositories across GitHub.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
